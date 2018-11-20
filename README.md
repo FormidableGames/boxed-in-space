@@ -2,35 +2,39 @@
 
 ## Índice
 
-1. **Introducción**
+1. **Historial de versiones**
+2. **Introducción**
     - Concepto del Juego
     - Características principales
     - Género
     - Público objetivo
     - Estilo visual
-2. **Mecánicas**
+3. **Mecánicas**
     - Jugabilidad
     - Flujo de juego
-3. **Interfaz**
+4. **Interfaz**
     - Diagrama de flujo
     - Menú principal
     - Créditos
     - Pantalla de selección de nivel
     - Nivel
     - Fin del juego
-4. **Narrativa**
+5. **Narrativa**
     - Premisa
     - Personajes
-5. **Arte 2D**
-    - Sprites
-    - Interfaces
-6. **Audio**
+6. **Arte**
+    - Concept art
+    - Arte 2D
+    - Arte 3D
+7. **Audio**
     - Pistas
     - Efectos de sonido
+8. **Roles del equipo**
+  
 ---
 ## Historial de versiones
 
-V 0.1: Primera versión del documento. Se ha establecido la base de todos los elementos.
+**V 0.1**: Primera versión del documento. Se ha establecido la base de todos los elementos.
 
 ## Introducción
 
@@ -41,117 +45,120 @@ Celebrando su prosperidad económica y social, han decidido montar una fiesta en
 Tú eres uno de esos seres y debes regresar sano y salvo a tu hogar, descendiendo por todas las plantas de la nave.
 
 ### Características principales
-- Input sencillo que permite jugar tanto en dispositivos móviles como en PC de forma cómoda.
+- *Input* sencillo que permite jugar tanto en dispositivos móviles como en PC de forma cómoda.
 - Dificultad seleccionable, dependiendo de la dificultad la nave madre será más grande o más pequeña (teniendo más niveles o menos).
-- Variedad en los niveles gracias a la diversidad de items y sus distintas funciones.
-Requiere una combinación de habilidad e ingenio.
+- Variedad en los niveles gracias a la diversidad de objetos y sus distintas funciones.
+- Requiere una combinación de habilidad e ingenio.
 
 ### Género
 Videojuego tipo roguelike con elementos de puzzle.
 
 ### Público objetivo
 Boxed in Space está enfocado tanto a jugadores habituales de “roguelikes” y puzles como a jugadores más casuales a los que pretendemos acercarnos con un estilo visual colorido y controles sencillos.
+
 PEGI 3.
 
 ### Estilo visual
-Colores llamativos y fiesteros, pero con tonos un poco extraños (“alien”), que contrastan con el blanco y gris suave de la nave y sirven para dirigir la atención del jugador.
-Estilo de dibujo cartoon, los modelos “3d” son realmente billboards que parecen recortes de papel.
-Diseño futurista/espacial mezclado con detalles de fiesta mundana (confeti, matasuegras …)
+- Colores llamativos y fiesteros, pero con tonos un poco extraños (*alien*), que contrastan con el blanco y gris suave de la nave y sirven para dirigir la atención del jugador.
+- Estilo de dibujo cartoon, los modelos 3D son realmente billboards que parecen recortes de papel.
+- Diseño futurista/espacial mezclado con detalles de fiesta mundana (confeti, matasuegras …)
 
 ## Mecánicas
 
 ### Jugabilidad
--Deplazamiento: arrastrar el dedo por la pantalla del móvil en una de las 4 direcciones básicas hará que el cubo rote y se desplace una casilla en esa dirección.
--Objetos: los objetos estarán repartidos por las distintas casillas del tablero. Al colocarte sobre una de ellas el objeto se pegará a la cara inferior del cubo. Los objetos serán utilizados cuando queden en la cara superior del cubo.
--Interacción con el escenario: podrás usar elementos del escenario para ayudarte a avanzar.
-Cámara: se podrá desplazar la cámara alrededor del cubo para poder ver todas sus caras.
+- Deplazamiento: arrastrar el dedo por la pantalla del móvil en una de las 4 direcciones básicas hará que el cubo rote y se desplace una casilla en esa dirección.
+- Objetos: los objetos estarán repartidos por las distintas casillas del tablero. Al colocarte sobre una de ellas el objeto se pegará a la cara inferior del cubo. Los objetos serán utilizados cuando queden en la cara superior del cubo.
+- Interacción con el escenario: podrás usar elementos del escenario para ayudarte a avanzar.
+- Cámara: se podrá desplazar la cámara alrededor del cubo para poder ver todas sus caras.
+![Gameplay1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay1.png "Movimiento")
+![Gameplay2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay2.png "Objetos")
 
 ### Flujo de juego
-Desde el menú principal puedes acceder a la pantalla de selección de nivel. Aquí podrás empezar una partida en el nivel que elijas. Avanzarás por el escenario hasta encontrar a un enemigo al que enfrentarte. Durante el combate no podrás continuar hasta derrotarlo. Al terminar el combate seguirás avanzando por el nivel hasta que encuentres a otro enemigo. 
-Cuando logres la victoria, seas derrotado o abandones, saldrá la pantalla de fin del juego desde la que podrás volver a rejugar el nivel, volver al selector de niveles o volver al menú principal.
+Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil, además de un extra llamado *Custom* en el que podrás seleccionar tú mismo el número de salas y de vidas que tendrás durante el juego. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú, al selector de dificultad o reintentar el mismo nivel.
 
 ## Interfaz
 
 ### Diagrama de flujo
-![Diagrama](https://github.com/FormidableGames/generation-y/blob/master/concept/diagrama-de-flujo.png "Diagrama de flujo")
+![Diagrama](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/Diagrama-flujo-aliens.png "Diagrama de flujo")
 
 ### Menú principal
-![Menú](https://github.com/FormidableGames/generation-y/blob/master/concept/interfaz1.png "Menu principal")
-1. *Navbar* con links (hacia la web del grupo y otros más secundarios).
-2. *Header* con un background y los botones para empezar a jugar, créditos, etc para que navegar sea mas fácil.
-3. Perfil de ¥ en Chirper.
-4. *Timeline* donde el contenido de la pagina (screenshots y lore) está repartido en "chirps".
-5. *Sidebar* con el perfil del equipo.
+![Menú](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/menu-principal.png "Menu principal")
+1. Botones Jugar y Créditos. Jugar redirige a la pantalla del selector de nivel. 
 
 ### Créditos
-![Créditos](https://github.com/FormidableGames/generation-y/blob/master/concept/interfaz5-creditos.png "Créditos")
-1. *Navbar*.
-2. *Header* con botón para volver atrás.
-3. Perfil de ¥ en Chirper.
-4. Los perfiles en Chirper de nuestro equipo.
+![Créditos](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/creditos.png "Créditos")
+1. Botón Volver (al menú principal).
+2. Cubo de créditos: cada integrante del grupo aparece en una cara de un cubo que se puede rotar.
 
 ### Pantalla de selección de nivel
-![Niveles](https://github.com/FormidableGames/generation-y/blob/master/concept/interfaz2.png "Selección de nivel")
-1. *Navbar*.
-2. *Header* donde ponga "selección de nivel" con botón para volver al menú principal.
-3. Nivel 1.
-4. Nivel 2.
-5. Nivel 3.
-
-Todos los niveles tendrán un *background*, una pequeña descripción y un botón para jugar.
+![Niveles](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/selector.png "Selección de nivel")
+1. Botón Volver (al menú principal).
+2. Barra de selección de nivel de dificultad. Cada nivel tiene unos parámetros determinados (número de salas y vidas) que determinará su dificultad. También se puede salir de estos estándares y personalizar el juego. 
+3. Indicadores de los parámetros mencionados, con botones para modificarlos.
+4. Botón Jugar.
 
 ### Nivel
-![Nivel](https://github.com/FormidableGames/generation-y/blob/master/concept/interfaz3-nivel.png "Nivel")
-1. Vida. 
-2. Botón de salir que lleva a la pantalla de fin de juego. 
-3. Zona de juego.
+![Nivel](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/nivel.png "Nivel")
+1. Botones Reintentar y Pausa. El botón Pausa dará la posibilidad de volver al menú principal.
+2. Zona de juego.
+3. Botón Cámara. Con el modo cámara activado se podrá controlar la misma (dispositivos móviles).
 
 ### Fin del juego
-![Final](https://github.com/FormidableGames/generation-y/blob/master/concept/interfaz4-fin-del-juego.png "Final")
-1. *Navbar*.
-2. Espacio en formato de "chirp" donde se muestran las estadísticas del juego y el jugador puede escribir un texto. Esto será lo que se muestre en el ranking según su puntuación. 
-3. Imagen de la protagonista.
-4. Botones para volver al menú principal, rejugar el nivel y volver al selector de nivel.
+![Final](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/fin-del-juego.png "Final")
+1. Estadísticas del juego.
+2. Botones Menú principal y Reintentar nivel.
 
 ## Narrativa
 
 ### Premisa
-El juego se desarrolla en un universo alternativo en el que la guerra entre dioses y demonios se libra en nuestro mundo, suponiendo constantes agravios para los humanos, que solo quieren poder vivir tranquilos. Un grupo de jóvenes *millennials*, hartos de esta situación, deciden formar un equipo para revelarse contra ellos y matarlos a todos.
+Un grupo de alienígenas va a montar un fiestón en su nave y para ello están recolectando a la especies más exóticas del universo. Eres una de esas especies, te han metido en una caja y no sabes que quieren hacer contigo.
 
 ### Personajes
-- **Protagonista, de mote ¥:** es una chica asiática que porta una *katana* con la que se enfrenta a sus enemigos. Le obsesiona el glamour y compartir su vida en Chirper, la red social del momento, donde se hace llamar @yenyen. Debido a esto último, es una de las caras más visibles de la revolución contra los dioses y demonios.
-- **Enemigos:** entes mitológicos que se entrometen a diario en la vida de los humanos.
+- **Cubo protagonista**: estás atrapado en una caja, lo único que sabemos de ti es que eres una de las especies más exóticas del universo.
+- **Enemigos**: son los alienígenas que están preparando la fiesta, mejor que no te descubran.
 
-## Arte 2D
+## Arte
 
 ### Concept art
-Nuestra protagonista:
-![Concept1](https://github.com/FormidableGames/generation-y/blob/master/concept/concept1.png "Protagonista")  
-![Concept2](https://github.com/FormidableGames/generation-y/blob/master/concept/concept2.png "Busto protagonista")  
-En combate:
-![Concept3](https://github.com/FormidableGames/generation-y/blob/master/concept/concept3.png "Protagonista luchando")  
-Paradiso, uno de los 3 niveles del juego:
-![Concept4](https://github.com/FormidableGames/generation-y/blob/master/concept/concept4-paradiso.png "Paradiso")  
+Nuestro protagonista:
+![Concept1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/caja.png "Protagonista")  
+![Concept2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/caja2.png "Protagonista colorines") 
+Un enemigo:
+![Concept3](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/alien.png "Enemigo")  
 
-### Sprites
+### Arte 2D
 Siguiendo la estética visual establecida:
-- Sprites en 2d de la protagonista y los distintos enemigos del juego.
-- Fondos 2d en diferentes capas.
+- Textura caja
+- Iconos objetos
+- Imagenes de aliens
+- Objetos interactuables
+- Iconos de la interfaz
+- Fondos de la interfaz
+- Botones del nivel
+- Menús emergentes
 
-### Interfaces
-- Iconos y fondos de la interfaz del juego.
+### Arte 3D
+- La caja
+- Escenarios
+- *Billboards*
 
 ## Audio 
 
 ### Pistas
 - Menú principal.
-- Nivel infierno.
-- Nivel purgatorio.
-- Nivel paraíso.
-- Fin del juego (victoria y derrota).
+- Música de la fiesta.
+- Música victoria.
+- Música derrota.
 
 ### Efectos de sonido
-- *Dash*.
+- Objetos.
 - Enemigos.
-- Sonidos del combate.
+- Movimiento.
 - Navegación por menús.
+
+## Roles del equipo
+- **Sandra Valverde** - Programación.
+- **Fco. Javier Vadillo** - Programación.
+- **Sara López** - Diseño.
+- **Nicolás Morales** - Arte 2D.
+- **Guillermo Pitarque** - Arte 3D y sonido.
