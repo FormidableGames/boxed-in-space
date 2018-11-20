@@ -74,7 +74,7 @@ PEGI 3.
 ![Gameplay2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay2.png "Objetos")
 
 ### Flujo de juego
-Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil, además de un extra llamado *Custom* en el que podrás seleccionar tú mismo el número de salas y de vidas que tendrás durante el juego. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú, al selector de dificultad o reintentar el mismo nivel.
+Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil, además de un extra llamado *Custom* en el que podrás seleccionar tú mismo el número de salas y de vidas que tendrás durante el juego. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú o reintentar el mismo nivel.
 
 ## Interfaz
 
@@ -111,7 +111,7 @@ Desde el menú podrás acceder al selector de dificultad. En el selector de difi
 ## Narrativa
 
 ### Premisa
-Un grupo de alienígenas va a montar un fiestón en su nave y para ello están recolectando a la especies más exóticas del universo. Eres una de esas especies, te han metido en una caja y no sabes que quieren hacer contigo.
+Un grupo de alienígenas va a montar un fiestón en su nave y para ello están recolectando a las especies más exóticas del universo. Eres una de esas especies, te han metido en una caja y no sabes qué quieren hacer contigo.
 
 ### Personajes
 - **Cubo protagonista**: estás atrapado en una caja, lo único que sabemos de ti es que eres una de las especies más exóticas del universo.
@@ -120,11 +120,12 @@ Un grupo de alienígenas va a montar un fiestón en su nave y para ello están r
 ## Arte
 
 ### Concept art
-Nuestro protagonista:
-![Concept1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/caja.png "Protagonista")  
-![Concept2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/caja2.png "Protagonista colorines") 
-Un enemigo:
-![Concept3](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/alien.png "Enemigo")  
+Nuestro protagonista:  
+![Concept1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/caja.png "Protagonista")    
+![Concept2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/caja2.png "Protagonista colorines")   
+  
+Un enemigo:  
+![Concept3](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/alien.png "Enemigo")    
 
 ### Arte 2D
 Siguiendo la estética visual establecida:
