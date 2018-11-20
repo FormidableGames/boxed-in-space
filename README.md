@@ -28,44 +28,43 @@
     - Pistas
     - Efectos de sonido
 ---
+## Historial de versiones
+
+V 0.1: Primera versión del documento. Se ha establecido la base de todos los elementos.
 
 ## Introducción
 
 ### Concepto del Juego
-En **Gen¥** controlas a **¥**, una joven perteneciente a un grupo de *millennials* decididos a acabar con la tiranía de dioses y demonios que utilizan el mundo como campo de batalla.  
 
-A lo largo del juego, avanzarás por el nivel seleccionado mientras te enfrentas a tus enemigos hasta llegar al final. Dentro del combate deberás usar tu *katana* para atacar en el momento justo y así poder derrotarlos.
+En **Boxed in Space** encarnas a un ser que ha sido abducido por alienígenas. 
+Celebrando su prosperidad económica y social, han decidido montar una fiesta en uno de sus más elegantes ovnis. Este año han decidido reunir a los seres más exóticos de la galaxia para exponerlos y así darle un toque especial a su fiesta. 
+Tú eres uno de esos seres y debes regresar sano y salvo a tu hogar, descendiendo por todas las plantas de la nave.
 
 ### Características principales
-- Mecánica de combate dinámico sencilla pero escalable.
-- Un único botón de *input* permite jugar tanto en dispositivos móviles como en PC de forma cómoda.
-- Tres niveles con distintas dificultades y ambientaciones para aportar variedad y conseguir una sensación de progreso.
+- Input sencillo que permite jugar tanto en dispositivos móviles como en PC de forma cómoda.
+- Dificultad seleccionable, dependiendo de la dificultad la nave madre será más grande o más pequeña (teniendo más niveles o menos).
+- Variedad en los niveles gracias a la diversidad de items y sus distintas funciones.
+Requiere una combinación de habilidad e ingenio.
 
 ### Género
-Videojuego de combate dinámico y simple que se basa en el contraataque, poniendo a prueba tu capacidad de reacción.
+Videojuego tipo roguelike con elementos de puzzle.
 
 ### Público objetivo
-**Gen¥** está enfocado tanto a un público casual como a jugadores más dedicados y competitivos que busquen jugar partidas rápidas tanto en PC como en dispositivos móviles.
+Boxed in Space está enfocado tanto a jugadores habituales de “roguelikes” y puzles como a jugadores más casuales a los que pretendemos acercarnos con un estilo visual colorido y controles sencillos.
+PEGI 3.
 
 ### Estilo visual
-- Paleta reducida con colores vivos que atraigan la atención del jugador a tiempo para que pueda reaccionar a los ataques.
-- Estética ligeramente *cyberpunk* y llamativa, mezclada con elementos de la mitología asiática.
-- Interfaz inspirada en las redes sociales.
+Colores llamativos y fiesteros, pero con tonos un poco extraños (“alien”), que contrastan con el blanco y gris suave de la nave y sirven para dirigir la atención del jugador.
+Estilo de dibujo cartoon, los modelos “3d” son realmente billboards que parecen recortes de papel.
+Diseño futurista/espacial mezclado con detalles de fiesta mundana (confeti, matasuegras …)
 
 ## Mecánicas
 
 ### Jugabilidad
-La mecánica principal de Gen¥ se basa en el combate: 
-![Combate1](https://github.com/FormidableGames/generation-y/blob/master/concept/combate1.png "Combate")
-Al hacer tap en la pantalla (en dispositivos móviles) o al pulsar una tecla/hacer *click* (en PC) saltarás hacia el enemigo para intentar atacarlo. Sin embargo, si el enemigo está protegido el ataque no será efectivo y quedarás aturdido:
-![Combate2](https://github.com/FormidableGames/generation-y/blob/master/concept/combate2.png "Bloqueo")
-Para hacer un ataque efectivo tendrás que esperar a que el enemigo cargue su ataque y anticiparte:
-![Combate3](https://github.com/FormidableGames/generation-y/blob/master/concept/combate3.png "Anticipación")
-Si lo consigues le dañarás y pasarás al otro lado de la pantalla:
-![Combate4](https://github.com/FormidableGames/generation-y/blob/master/concept/combate4.png "Dash")
-
-Fuera de combate utilizarás este mismo ataque para desplazarte a lo largo del nivel y llegar hasta el siguiente enemigo.
-
+-Deplazamiento: arrastrar el dedo por la pantalla del móvil en una de las 4 direcciones básicas hará que el cubo rote y se desplace una casilla en esa dirección.
+-Objetos: los objetos estarán repartidos por las distintas casillas del tablero. Al colocarte sobre una de ellas el objeto se pegará a la cara inferior del cubo. Los objetos serán utilizados cuando queden en la cara superior del cubo.
+-Interacción con el escenario: podrás usar elementos del escenario para ayudarte a avanzar.
+Cámara: se podrá desplazar la cámara alrededor del cubo para poder ver todas sus caras.
 
 ### Flujo de juego
 Desde el menú principal puedes acceder a la pantalla de selección de nivel. Aquí podrás empezar una partida en el nivel que elijas. Avanzarás por el escenario hasta encontrar a un enemigo al que enfrentarte. Durante el combate no podrás continuar hasta derrotarlo. Al terminar el combate seguirás avanzando por el nivel hasta que encuentres a otro enemigo. 
