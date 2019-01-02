@@ -34,7 +34,8 @@
 ---
 ## Historial de versiones
 
-**V 0.1**: Primera versión del documento. Se ha establecido la base de todos los elementos.
+V 0.1: Primera versión del documento. Se ha establecido la base de todos los elementos.  
+**V 0.2**: Segunda versión del documento. Se ha añadido la lista de objetos con sus mecánicas y descripciones.
 
 ## Introducción
 
@@ -72,6 +73,12 @@ PEGI 3.
 - Cámara: se podrá desplazar la cámara alrededor del cubo para poder ver todas sus caras.
 ![Gameplay1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay1.png "Movimiento")
 ![Gameplay2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay2.png "Objetos")
+
+### Objetos
+- **Bomba confeti**: esta bomba que usan los aliens como petardo terrícola permite romper paredes resquebrajadas y elimina enemigos.   **Radio**: 1 casilla en todas las direcciones y diagonales.  
+- **Deshidratador aurora**: con el gas a presión tan caliente que suelta deshiela suelo congelado y elimina enemigos. Los aliens lo usan para hacer bonitos efectos de nubes de colores.    **Radio**: 2 casillas en todas las direcciones.  
+- **Bola de luces**: con la electricidad que alberga puede encender motores y elimina enemigos. Se usa para crear luces de colores como si se estuviese en una discoteca terrícola. Parece que estos aliens no saben crear aparatos de fiesta que no causen alguna clase de destrucción.    **Radio**: 3 casillas en la dirección de movimiento.  
+- **Autodestructor**: si usas este objeto te eliminará instantáneamente, el motivo de crear un artilugio con este uso todavía me es desconocido. Creo que estos aliens no son tan inteligentes como parecen con su maquinaria avanzada.      **No tiene radio.**
 
 ### Flujo de juego
 Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil, además de un extra llamado *Custom* en el que podrás seleccionar tú mismo el número de salas y de vidas que tendrás durante el juego. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú o reintentar el mismo nivel.
