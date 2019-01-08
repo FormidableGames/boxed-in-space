@@ -13,6 +13,7 @@
     - Jugabilidad
     - Objetos
     - Escenario
+    - Enemigos
     - Flujo de juego
 4. **Interfaz**
     - Diagrama de flujo
@@ -38,7 +39,10 @@
 
 V 0.1: Primera versión del documento. Se ha establecido la base de todos los elementos.  
 V 0.2: Segunda versión del documento. Se ha añadido la lista de objetos con sus mecánicas y descripciones.  
-**V 0.3**: Tercera versión del documento. Se ha añadido la lista de objetos del escenario con sus mecánicas y descripciones.
+V 0.3: Tercera versión del documento. Se ha añadido la lista de objetos del escenario con sus mecánicas y descripciones.
+**V 0.4**: Cuarta versión del documento. Se ha añadido la lista deenemigos con sus mecánicas y descripciones, además se ha retocado alguna información.
+
+## Introducción
 
 ## Introducción
 
@@ -75,7 +79,8 @@ PEGI 3.
 - Interacción con el escenario: podrás usar elementos del escenario para ayudarte a avanzar.
 - Cámara: se podrá desplazar la cámara alrededor del cubo para poder ver todas sus caras.
 ![Gameplay1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay1.png "Movimiento")
-![Gameplay2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay2.png "Objetos")
+![Gameplay2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay2.png "Objetos")  
+El juego irá por turnos, cada vez que te muevas empezará un turno, en este los enemigos se moverán, cogerás el item correspondiente si hay alguno en la casilla a la que has ido, después se ativará el item que esté en la parte de arriba (si hay alguno) y por último los enemigos te atraparán (si pueden) y los láseres dispararán.
 
 ### Objetos
 - **Bomba confeti**: esta bomba que usan los aliens como petardo terrícola permite romper paredes resquebrajadas y elimina enemigos.   **Radio**: 1 casilla en todas las direcciones y diagonales.  
@@ -94,10 +99,17 @@ PEGI 3.
        + Icono llave-puerta: abre la casilla de salida.
        + Icono copo de nieve: congela cierta parte del nivel. Las casillas que se puedan congelar tendrán marcas.  
        + Icono láser rotando: permite girar en 90 grados los láseres del nivel.
-       + Icono camino: si hay un puente en el nivel (activo) al pulsar el botón este camino cambiará por otro distinto.
+       + Icono camino: si hay un puente en el nivel (activo) al pulsar el botón este camino cambiará por otro distinto.  
+  
+### Enemigos  
+Todos los enemigos siguen la misma base: si al final del turno están al lado del protagonista lo atraparán (en una de las cuatro casillas de los lados), y si cuando se mueven se lo encuentran en su trayectora lo capturarán inmediatamente.  
+
+- **Alien Tipo 1**: Este alien da vueltas alrededor de una casilla especifica, se mueve una casilla por turno.  
+- **Alien Tipo 2**: Este alien se mueve hasta que encuentra una pared, entonces irá a la casilla de al lado y se dará la vuelta. Entonces empezará otra vez el poceso. Se mueve una casilla por turno.  
+- **Alien Tipo 3**: A este tipo de alien le gusta ir en patines, se moverá en diagonal hasta que encuentre una pared, entonces irá en la otra diagonal. En un único turno se mueve hasta la pared.
   
 ### Flujo de juego
-Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil, además de un extra llamado *Custom* en el que podrás seleccionar tú mismo el número de salas y de vidas que tendrás durante el juego. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú o reintentar el mismo nivel.
+Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú o reintentar el mismo nivel.
 
 ## Interfaz
 
@@ -116,7 +128,7 @@ Desde el menú podrás acceder al selector de dificultad. En el selector de difi
 ### Pantalla de selección de nivel
 ![Niveles](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/selector.png "Selección de nivel")
 1. Botón Volver (al menú principal).
-2. Barra de selección de nivel de dificultad. Cada nivel tiene unos parámetros determinados (número de salas y vidas) que determinará su dificultad. También se puede salir de estos estándares y personalizar el juego. 
+2. Barra de selección de nivel de dificultad. Cada nivel tiene unos parámetros determinados (número de salas y vidas) que determinará su dificultad. El botón de Custom no aparecerá en la versión final. 
 3. Indicadores de los parámetros mencionados, con botones para modificarlos.
 4. Botón Jugar.
 
