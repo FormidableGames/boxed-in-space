@@ -39,12 +39,11 @@
 
 V 0.1: Primera versión del documento. Se ha establecido la base de todos los elementos.  
 V 0.2: Segunda versión del documento. Se ha añadido la lista de objetos con sus mecánicas y descripciones.  
-V 0.3: Tercera versión del documento. Se ha añadido la lista de objetos del escenario con sus mecánicas y descripciones.
-**V 0.4**: Cuarta versión del documento. Se ha añadido la lista deenemigos con sus mecánicas y descripciones, además se ha retocado alguna información.
-
+V 0.3: Tercera versión del documento. Se ha añadido la lista de objetos del escenario con sus mecánicas y descripciones.  
+V 0.4: Cuarta versión del documento. Se ha añadido la lista de enemigos con sus mecánicas y descripciones, además se ha retocado alguna información.  
+**V 0.5**: Quinta versión del documento. Se ha añadido la lista de sonidos.
 ## Introducción
 
-## Introducción
 
 ### Concepto del Juego
 
@@ -167,7 +166,7 @@ Siguiendo la estética visual establecida:
 - Textura caja
 - Iconos objetos
 - Imagenes de aliens
-- Objetos interactuables
+- Textura objetos interactuables
 - Iconos de la interfaz
 - Fondos de la interfaz
 - Botones del nivel
@@ -175,7 +174,11 @@ Siguiendo la estética visual establecida:
 
 ### Arte 3D
 - La caja
-- Escenarios
+- Escenarios:  
+    + Láseres.  
+    + Botones.  
+    + Batería.  
+    + Bloques.
 - *Billboards*
 
 ## Audio 
@@ -187,9 +190,22 @@ Siguiendo la estética visual establecida:
 - Música derrota.
 
 ### Efectos de sonido
-- Objetos.
-- Enemigos.
-- Movimiento.
+- Objetos:  
+    + Recoger Objeto. (típico sonido de cuando recoges un item)   
+    + Usar Objeto:  
+        - Sonido bomba explotando. (BOOM) 
+        - Sonido aire a presión siendo expulsado. (SSSSHHHH)
+        - Sonido bola de electricidad. (Sonido de electricidad contenida)
+- Escenario:  
+    + Sonido resvalandose por hielo.  
+    + Sonido puente activado. (taratatá!)
+    + Sonido botón pulsado.  
+    + Sonido cuando abres la puerta. (Puerta abriendose + efusividad)
+- Enemigos:  
+    + Alien andando.
+    + Ruidos de alien. (cuando te atrapa y cuando le eliminas)  
+    + Patinando.
+- Movimiento. (un cubo moviendose)
 - Navegación por menús.
 
 ## Roles del equipo
