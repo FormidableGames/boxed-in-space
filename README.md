@@ -200,7 +200,8 @@ Siguiendo la estética visual establecida:
     + Sonido resvalandose por hielo.  
     + Sonido puente activado. (taratatá!)
     + Sonido botón pulsado.  
-    + Sonido cuando abres la puerta. (Puerta abriendose + efusividad)
+    + Sonido cuando abres la puerta. (Puerta abriendose + efusividad)  
+    + Sonido disparo láser. (PIUM!)
 - Enemigos:  
     + Alien andando.
     + Ruidos de alien. (cuando te atrapa y cuando le eliminas)  
