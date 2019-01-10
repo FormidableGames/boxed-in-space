@@ -13,7 +13,8 @@
     - Jugabilidad
     - Objetos
     - Escenario
-    - Enemigos
+    - Enemigos  
+    - Puntuación
     - Flujo de juego
 4. **Interfaz**
     - Diagrama de flujo
@@ -41,7 +42,8 @@ V 0.1: Primera versión del documento. Se ha establecido la base de todos los el
 V 0.2: Segunda versión del documento. Se ha añadido la lista de objetos con sus mecánicas y descripciones.  
 V 0.3: Tercera versión del documento. Se ha añadido la lista de objetos del escenario con sus mecánicas y descripciones.  
 V 0.4: Cuarta versión del documento. Se ha añadido la lista de enemigos con sus mecánicas y descripciones, además se ha retocado alguna información.  
-**V 0.5**: Quinta versión del documento. Se ha añadido la lista de sonidos.
+V 0.5: Quinta versión del documento. Se ha añadido la lista de sonidos.  
+**V 0.6**: Sexta versión del documento. Se ha añadido información extra así como las puntuaciones.
 ## Introducción
 
 
@@ -53,15 +55,15 @@ Tú eres uno de esos seres y debes regresar sano y salvo a tu hogar, descendiend
 
 ### Características principales
 - *Input* sencillo que permite jugar tanto en dispositivos móviles como en PC de forma cómoda.
-- Dificultad seleccionable, dependiendo de la dificultad la nave madre será más grande o más pequeña (teniendo más niveles o menos).
+- Dificultad seleccionable, dependiendo de la dificultad la nave madre tendrá salas más o menos complicadas.
 - Variedad en los niveles gracias a la diversidad de objetos y sus distintas funciones.
 - Requiere una combinación de habilidad e ingenio.
 
 ### Género
-Videojuego tipo roguelike con elementos de puzzle.
+Videojuego tipo arcade (ya que irás consiguiendo puntos dependiendo de tu habilidad) con elementos de puzzle.
 
 ### Público objetivo
-Boxed in Space está enfocado tanto a jugadores habituales de “roguelikes” y puzles como a jugadores más casuales a los que pretendemos acercarnos con un estilo visual colorido y controles sencillos.
+Boxed in Space está enfocado tanto a jugadores habituales de juegos arcade y puzles como a jugadores más casuales a los que pretendemos acercarnos con un estilo visual colorido y controles sencillos.
 
 PEGI 3.
 
@@ -98,17 +100,23 @@ El juego irá por turnos, cada vez que te muevas empezará un turno, en este los
        + Icono llave-puerta: abre la casilla de salida.
        + Icono copo de nieve: congela cierta parte del nivel. Las casillas que se puedan congelar tendrán marcas.  
        + Icono láser rotando: permite girar en 90 grados los láseres del nivel.
-       + Icono camino: si hay un puente en el nivel (activo) al pulsar el botón este camino cambiará por otro distinto.  
+       + Icono camino: si hay un puente en el nivel (activo) al pulsar el botón este camino cambiará por otro distinto. (no se metió al final)  
   
 ### Enemigos  
 Todos los enemigos siguen la misma base: si al final del turno están al lado del protagonista lo atraparán (en una de las cuatro casillas de los lados), y si cuando se mueven se lo encuentran en su trayectora lo capturarán inmediatamente.  
 
 - **Alien Tipo 1**: Este alien da vueltas alrededor de una casilla especifica, se mueve una casilla por turno.  
 - **Alien Tipo 2**: Este alien se mueve hasta que encuentra una pared, entonces irá a la casilla de al lado y se dará la vuelta. Entonces empezará otra vez el poceso. Se mueve una casilla por turno.  
-- **Alien Tipo 3**: A este tipo de alien le gusta ir en patines, se moverá en diagonal hasta que encuentre una pared, entonces irá en la otra diagonal. En un único turno se mueve hasta la pared.
+- **Alien Tipo 3**: A este tipo de alien le gusta ir en patines, se moverá en diagonal hasta que encuentre una pared, entonces irá en la otra diagonal. En un único turno se mueve hasta la pared.  
+  
+### Puntuación  
+En el juego se tendrá en cuenta los enemigos eliminados, las vidas con las que has finalizado y si has hecho un retry o no.  
+Cada Alien Tipo 1 te dará 50 puntos, cada Alien Tipo 2 te dará 100 puntos, cada Alien Tipo 3 te dará 150 puntos.  
+Si acabas con cuatro vidas se te recompensará con 500 puntos, si son tres 250 puntos, si son dos 100 puntos y si es una 50 puntos.  
+Si te eliminan y usas el retry (continuar) tus puntos hasta el momento serán borrados. Además al acabar no se te sumarán los puntos de las vidas (para que no sea injusto).
   
 ### Flujo de juego
-Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú o reintentar el mismo nivel.
+Desde el menú podrás acceder al selector de dificultad. En el selector de dificultad podrás elegir entre tres dificultades: fácil, normal y difícil. En todas las dificultades tendrás un total de 4 vidas. Una vez en juego tendrás que ir avanzando con ayuda de los objetos que vayas encontrando por los distintos niveles buscando la salida, mientras evitas que los aliens te eliminen. Al acabar la partida aparecerán tus estadísticas y podrás volver al menú o reintentar el mismo nivel. Si te eliminan del todo (te quitan las 4 vidas) podrás volver a seguir por donde ibas pero se te eliminarán los puntos y no podrás conseguir el bonus de: No Morir.
 
 ## Interfaz
 
@@ -203,7 +211,6 @@ Siguiendo la estética visual establecida:
     + Sonido cuando abres la puerta. (Puerta abriendose + efusividad)  
     + Sonido disparo láser. (PIUM!)
 - Enemigos:  
-    + Alien andando.
     + Ruidos de alien. (cuando te atrapa y cuando le eliminas)  
     + Patinando.
 - Movimiento. (un cubo moviendose)
