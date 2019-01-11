@@ -1,3 +1,6 @@
+[código](https://github.com/FormidableGames/boxed-in-space)  
+[portfolio](https://formidablegames.github.io/portfolio/)  
+
 # Boxed in space
 
 ## Índice
@@ -79,7 +82,7 @@ PEGI 3.
 - Deplazamiento: muevete con WASD en el ordenador o arrastra el dedo por la pantalla del móvil en una de las 4 direcciones básicas para que el cubo rote y se desplace una casilla en esa dirección.
 - Objetos: los objetos estarán repartidos por las distintas casillas del tablero. Al colocarte sobre una de ellos el objeto se pegará a la cara inferior del cubo. Los objetos serán utilizados cuando queden en la cara superior del cubo.
 - Interacción con el escenario: podrás usar elementos del escenario para ayudarte a avanzar.
-- Cámara: se podrá desplazar la cámara por el nivel para poder verlo entero tanto como hacer zoom (haz click con el ratón en el ordenador y usa la rueda para hacer zoom).
+- Cámara: se podrá desplazar la cámara por el nivel para poder verlo entero tanto como hacer zoom (haz click derecho con el ratón en el ordenador y usa la rueda para hacer zoom).
 ![Gameplay1](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay1.png "Movimiento")
 ![Gameplay2](https://github.com/FormidableGames/boxed-in-space/blob/master/concepts/gameplay2.png "Objetos")  
 El juego irá por turnos, cada vez que te muevas empezará un turno, en este los enemigos se moverán, cogerás el item correspondiente si hay alguno en la casilla a la que has ido, después se ativará el item que esté en la parte de arriba (si hay alguno) y por último los enemigos te atraparán (si pueden) y los láseres dispararán.
